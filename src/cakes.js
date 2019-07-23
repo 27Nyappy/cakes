@@ -98,6 +98,6 @@ const cakes = [
     redVelvet,
     tiramisu,
     vanilla
-]
+];
 
 export default cakes;
