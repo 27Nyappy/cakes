@@ -1,5 +1,5 @@
 import renderCake from './render-cake.js';
-import cakes from './cakes.js';
+import cakes from './data/cakes.js';
 
 const list = document.getElementById('cakes');
 
