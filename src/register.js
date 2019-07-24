@@ -14,10 +14,17 @@ export function findProduct(cakes, code) {
     }
 }
 
-//getOrderTotal
+
 export function getOrderTotal(order, cakes) {
-    findProduct
+    let orderTotal = 0;
+    
+    for(let i = 0; i < order.length; i++) {
+        const code = order[i].code;
+        const foundCake = findProduct(cakes, code);
+        const lineTotal = getLineTotal(order[i].quantity, foundCake.price);
 
-
+        orderTotal += lineTotal;
     }
+
+    return orderTotal;
 }

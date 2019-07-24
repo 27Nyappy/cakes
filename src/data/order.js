@@ -21,11 +21,11 @@ const order = [
     },
     {
         code: 'passion-fruit',
-        quantity: 2,
+        quantity: 4,
     },
     {
         code: 'red-velvet',
-        quantity: 2,
+        quantity: 1,
     },
     {
         code: 'tiramisu',
@@ -33,7 +33,7 @@ const order = [
     },
     {
         code: 'vanilla',
-        quantity: 2,
+        quantity: 5,
     }
 ];
 

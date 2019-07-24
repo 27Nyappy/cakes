@@ -35,5 +35,9 @@ test('finds the product', assert => {
 });
 
 test('get order total', assert => {
-    
+    const expected = 124.10;
+
+    const orderTotal = getOrderTotal(order, cakes);
+
+    assert.equal(orderTotal, expected);
 });
