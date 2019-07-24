@@ -1,0 +1,62 @@
+#cakes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cakes li {
+    list-style-type: none;
+    position: relative;
+    border: 1px solid rgb(172, 136, 160);
+    border-radius: 15px;
+    background-color: rgb(212, 193, 206);
+    width: 40%;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 15px;
+    box-shadow: 2px 3px 3px rgb(82, 45, 70);
+}
+
+#cakes li:hover {
+    box-shadow: 4px 6px 4px rgb(100, 42, 82);
+    transform: translate3d(-1px, -1px, 0);
+}
+
+h3 {
+    text-decoration-line: underline;
+    border: 3px solid rgb(172, 136, 160);
+    box-shadow: .5px .5px 2px rgb(71, 37, 61);
+    margin: 9px;
+    text-shadow: .5px .5px 1px grey;
+}
+
+img {
+    width: 50%;
+    border-radius: 5px;
+    min-width: 200px;
+    border: 3px solid rgb(172, 136, 160);
+    box-shadow: .5px .5px 2px rgb(71, 37, 61);
+}
+
+#cakes p {
+    font-size: 14pt;
+    margin: 30px 30px 0px 30px;
+    text-shadow: .5px .5px 1px grey;
+}
+
+button {
+    display: block;
+    width: 80%;
+    height: 50px;
+    font-size: 14pt;
+    background-color: rgb(217, 204, 218);
+    border-color: rgb(82, 45, 70);
+    border-radius: 3px;
+    box-shadow: 1px 2px 3px rgb(82, 45, 70);
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-shadow: .5px .5px 1px grey;
+}
+button:hover {
+    cursor: pointer;
+}
