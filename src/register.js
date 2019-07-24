@@ -1,9 +1,8 @@
-//getLineTotal
 export function getLineTotal(quantity, price) {
     return Number((quantity * price).toFixed(2));
 }
 
-//findProduct
+
 export function findProduct(cakes, code) {
     for(let i = 0; i < cakes.length; i++) {
         const cake = cakes[i];
