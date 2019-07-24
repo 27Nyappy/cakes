@@ -17,6 +17,7 @@ table {
 
 table thead th {
     border-bottom: 1px solid rgb(100, 42, 82);
+    line-height: 40px;
 }
 
 tbody {
