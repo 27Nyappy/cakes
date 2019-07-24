@@ -14,7 +14,6 @@ for(let i = 0; i < order.length; i++) {
     body.appendChild(dom);
 }
 
-let total = 0;
 for(let i = 0; i < order.length; i++) {
-    totalDisplay.textContent = toUSD(total + getOrderTotal(order, cakes));
+    totalDisplay.textContent = toUSD(getOrderTotal(order, cakes));
 }
