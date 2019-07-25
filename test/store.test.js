@@ -68,3 +68,12 @@ test('add product to shopping cart', assert => {
     assert.deepEqual(cart, expected);
 
 });
+
+test('get product', assert => {
+    const code = 'almond';
+    const expected = cakes[0];
+
+    const product = store.getProduct(code);
+
+    assert.deepEqual(product, expected);
+});

@@ -26,7 +26,7 @@ const store = {
     },
 
     getShoppingCart() {
-        let cart = store.get('cake');
+        let cart = store.get('delicious');
 
         if(!cart) {
             cart = [];
@@ -50,7 +50,14 @@ const store = {
             cart.push(item);
         }
 
-        store.save('cake', cart);
+        store.save('delicious', cart);
+    },
+
+    getProduct(code) {
+        const cakes = store.getProducts();
+        const product = findProduct(cakes, code);
+        
+        return product;
     }
 
 };

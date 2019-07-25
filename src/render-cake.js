@@ -1,3 +1,5 @@
+import store from './data/store.js';
+
 function renderCake(cake) {
     const li = document.createElement('li');
     li.className = cake.category;
@@ -22,6 +24,9 @@ function renderCake(cake) {
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = cake.code;
+    button.addEventListener('click', () => {
+        store.orderProduct(cake.code);
+    });
     p.appendChild(button);
 
     li.appendChild(p);
