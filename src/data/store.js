@@ -24,6 +24,15 @@ const store = {
         return products;
     },
 
+    getShoppingCart() {
+        let cart = store.get('cake');
+
+        if(!cart) {
+            cart = [];
+        }
+        return cart;
+    }
+
 };
 
 export default store;
