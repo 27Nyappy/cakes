@@ -1,5 +1,5 @@
 import cakes from '../data/cakes.js';
-import { findProduct } from '../register.js';
+
 const store = {
     storage: window.localStorage,
 
@@ -22,8 +22,8 @@ const store = {
             products = cakes;
         }
         return products;
+    },
 
-    }
 };
 
 export default store;

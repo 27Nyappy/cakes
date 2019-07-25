@@ -34,3 +34,7 @@ test('gets products with bootstrapped default', assert => {
     
     assert.deepEqual(products, cakes);
 });
+
+test('get shopping cart', assert => {
+    const cart = store.getShoppingCart()
+})
