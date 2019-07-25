@@ -40,3 +40,31 @@ test('get shopping cart', assert => {
 
     assert.deepEqual(cart, []);
 });
+
+test('order product code to empty shopping cart', assert => {
+    const code = 'almond';
+    const expected = [{
+        code: 'almond',
+        quantity: 1
+    }];
+   
+    store.orderProduct(code);
+    const cart = store.getShoppingCart();
+
+    assert.deepEqual(cart, expected);
+    
+});
+
+test('add product to shopping cart', assert => {
+    const code = 'almond';
+    const expected = [{
+        code: 'almond',
+        quantity: 2
+    }];
+
+    store.orderProduct(code);
+    store.orderProduct(code);
+    const cart = store.getShoppingCart();
+    assert.deepEqual(cart, expected);
+
+});

@@ -1,4 +1,5 @@
 import cakes from '../data/cakes.js';
+import { findProduct } from '../register.js';
 
 const store = {
     storage: window.localStorage,
@@ -31,6 +32,25 @@ const store = {
             cart = [];
         }
         return cart;
+    },
+
+    orderProduct(code) {
+        const cart = store.getShoppingCart();
+        const item = findProduct(cart, code);
+
+        if(item) {
+            item.quantity++;
+        }
+        else {
+            const item = {
+                code: code,
+                quantity: 1
+            };
+
+            cart.push(item);
+        }
+
+        store.save('cake', cart);
     }
 
 };
