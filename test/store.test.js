@@ -1,4 +1,5 @@
 import store from '../src/data/store.js';
+import cakes from '../src/data/cakes.js';
 
 const test = QUnit.test;
 
@@ -17,13 +18,19 @@ test('confirmation of storage = window.sessionStorage', assert => {
 });
 
 test('get and save methods', assert => {
-    const a = 'torte';
-    const torte = { flavor: 'chocolate' };
+    const a = 'cake';
+    const cake = { flavor: 'chocolate' };
 
-    store.save(a, torte);
+    store.save(a, cake);
 
     const retrieve = store.get(a);
 
-    assert.deepEqual(retrieve, torte);
+    assert.deepEqual(retrieve, cake);
 
+});
+
+test('gets products with bootstrapped default', assert => {
+    const products = store.getProducts();
+    
+    assert.deepEqual(products, cakes);
 });

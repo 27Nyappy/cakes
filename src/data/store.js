@@ -1,3 +1,5 @@
+import cakes from '../data/cakes.js';
+import { findProduct } from '../register.js';
 const store = {
     storage: window.localStorage,
 
@@ -10,8 +12,18 @@ const store = {
         const json = store.storage.getItem(key);
         const item = JSON.parse(json);
         return item;
-    }
+    },
 
+    getProducts() {
+        let products = store.get('cake');
+
+        if(!products) {
+            store.save('cake', cakes);
+            products = cakes;
+        }
+        return products;
+
+    }
 };
 
 export default store;
