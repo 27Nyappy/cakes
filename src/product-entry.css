@@ -3,15 +3,35 @@ form {
     flex-direction: column;
     width: 100%;
     margin: auto;
-    min-height: 450px;
+    align-items: center;
+    min-height: 530px;
     background: rgba(202, 179, 201, .6);
     align-items: center;
     border-radius: 3px;
 }
 
 div {
+    width: 600px;
+    text-align: left;
+    border: .5px dotted rgb(135, 60, 146);
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 400px;
+    height: 20px;;
+    margin: 10px;
+}
+
+#image:hover {
+    cursor: pointer;
+}
+
+#description {
+    width: 400px;
+    height: 80px;
+    margin: 10px;
 }
 
 button {
