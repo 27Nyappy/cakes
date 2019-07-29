@@ -32,7 +32,7 @@ const mango = {
     code: 'mango',
     name: 'Mango Cake',
     image: 'assets/mango.jpg',
-    description: 'Cake bursting with mango refreshing mango flavor, topped with mango compote.',
+    description: 'Cake bursting with refreshing mango flavor, topped with mango compote.',
     category: 'tropical',
     price: 5.50,
     cost: 2.30,

@@ -47,7 +47,7 @@
 
             <div>
                 <label for="price">Price:</label>
-                <input id="price" type="number" name="price" required>
+                <input id="price" type="number" name="price" step=".01" required>
             </div>
 
             <div>
@@ -55,10 +55,13 @@
                 <textarea id="description" name="description" required></textarea>
             </div>
 
-            <button>Create Cake</button>
+            <div>
+                <button>Create Cake</button>
+            </div>
+            
         </form>
     </main>
-
+    <script type="module" src="src/product-entry.js"></script>
 </body>
 
 </html>

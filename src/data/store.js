@@ -58,6 +58,12 @@ const store = {
         const product = findProduct(cakes, code);
         
         return product;
+    },
+
+    addProduct(product) {
+        const cakes = store.getProducts();
+        cakes.push(product);
+        store.save('cake', cakes);
     }
 
 };

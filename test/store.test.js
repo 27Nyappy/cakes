@@ -77,3 +77,19 @@ test('get product', assert => {
 
     assert.deepEqual(product, expected);
 });
+
+test('API method for add product', assert => {
+    const product = {
+        code: 'banana',
+        name: 'Banana Cake',
+        image: 'assets/banana.jpg',
+        category: 'classic',
+        price: 3.50,
+        description: 'A moist, flavorful and fresh banana cake.',
+    };
+
+    store.addProduct(product);
+    const cakes = store.getProducts();
+
+    assert.deepEqual(cakes[cakes.length - 1], product);
+});
