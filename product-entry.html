@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Entry</title>
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/product-entry.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">The World of Cakes</h1>
+    </header>
+
+    <main>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./cakes.html">View Cakes</a>
+            <a href="./shopping-cart.html">Shopping Cart</a>
+        </nav>
+        <h2 class="heading">Product Entry Form</Form>
+        </h2>
+
+        <form id="entry">
+            <div>
+                <label for="code">Code:</label>
+                <input id="code" type="text" name="code" required>
+            </div>
+
+            <div>
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" required>
+            </div>
+
+            <div>
+                <label for="image">Image:</label>
+                <input id="image" type="file" name="image" required>
+            </div>
+
+            <div>
+                <label for="category">Category:</label>
+                <input id="category" type="text" name="category" required>
+            </div>
+
+            <div>
+                <label for="price">Price:</label>
+                <input id="price" type="number" name="price" step=".01" required>
+            </div>
+
+            <div>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+
+            <div>
+                <button>Create Cake</button>
+            </div>
+            
+        </form>
+    </main>
+    <script type="module" src="src/product-entry.js"></script>
+</body>
+
+</html>
